@@ -2,6 +2,9 @@
 noinst_LIBRARIES = libegglistmodel.a
 
 libegglistmodel_a_SOURCES = \
+	gio-patch.h \
+	glistmodel.h \
+	glistmodel.c \
 	egglistmodel.h \
 	eggsortedhash.c \
 	eggsortedhash.h \
@@ -12,4 +15,5 @@ libegglistmodel_a_SOURCES = \
 
 libegglistmodel_a_CFLAGS = \
 	-Wall \
+	-include gio-patch.h \
 	$(EGGLISTMODEL_CFLAGS)
