@@ -31,8 +31,10 @@
   #define GIO_COMPILATION
 
   typedef struct _GListModel GListModel;
+  typedef struct _GListStore GListStore;
 
   #include "glistmodel.h"
+  #include "gliststore.h"
 
   #undef __GIO_GIO_H_INSIDE__
   #undef GIO_COMPILATION

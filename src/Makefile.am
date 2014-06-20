@@ -5,6 +5,8 @@ libegglistmodel_a_SOURCES = \
 	gio-patch.h \
 	glistmodel.h \
 	glistmodel.c \
+	gliststore.h \
+	gliststore.c \
 	egglistmodel.h \
 	eggsortedhash.c \
 	eggsortedhash.h \
