@@ -81,7 +81,7 @@ egg_keyed_list_store_get_item (GListModel *list,
 {
   EggKeyedListStore *store = EGG_KEYED_LIST_STORE (list);
 
-  return egg_sorted_hash_get (store->items, position);
+  return g_object_ref (egg_sorted_hash_get (store->items, position));
 }
 
 static void
