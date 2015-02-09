@@ -1,7 +1,7 @@
 
-noinst_LIBRARIES = libegglistmodel.a
+noinst_LTLIBRARIES = libegglistmodel.la
 
-libegglistmodel_a_SOURCES = \
+libegglistmodel_la_SOURCES = \
 	egglistmodel.h \
 	eggsortedhash.c \
 	eggsortedhash.h \
@@ -10,6 +10,6 @@ libegglistmodel_a_SOURCES = \
 	eggkeyedliststore.c \
 	eggkeyedliststore.h
 
-libegglistmodel_a_CFLAGS = \
+libegglistmodel_la_CFLAGS = \
 	-Wall \
 	$(EGGLISTMODEL_CFLAGS)
