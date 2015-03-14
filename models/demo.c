@@ -27,7 +27,7 @@ int main (int argc, char **argv)
   model = egg_app_info_model_new ();
 
   listbox = gtk_list_box_new ();
-  gtk_list_box_bind_model (GTK_LIST_BOX (listbox), model, create_row_widget, NULL);
+  gtk_list_box_bind_model (GTK_LIST_BOX (listbox), model, create_row_widget, NULL, NULL);
 
   scrolled_window = gtk_scrolled_window_new (NULL, NULL);
   gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (scrolled_window), GTK_POLICY_NEVER, GTK_POLICY_AUTOMATIC);
